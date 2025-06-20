@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Azzam Mohamed | Healthcare Data Analyst Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    html { scroll-behavior: smooth; }
+    body::-webkit-scrollbar { display: none; }
+    .glass {
+      @apply bg-white/10 backdrop-blur-md border border-white/20 shadow-lg;
+    }
+    .scroll-indicator {
+      position: fixed;
+      top: 0; left: 0; height: 4px; z-index: 50;
+      background: linear-gradient(90deg, #38bdf8 0%, #22d3ee 100%);
+      transition: width 0.2s;
+    }
+    .profile-img {
+      object-fit: cover;
+      object-position: center;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 via-blue-100 to-green-50 text-slate-800 min-h-screen relative">
+
+  <!-- Scroll Indicator -->
+  <div id="scrollBar" class="scroll-indicator w-0"></div>
+
+  <!-- Sticky Navbar -->
+  <nav id="navbar" class="fixed top-0 left-0 w-full z-40 transition-all duration-300 shadow-lg bg-blue-100 border-b border-blue-200">
+    <div class="max-w-5xl mx-auto flex items-center justify-between px-6 py-3">
+      <div class="flex items-center space-x-3">
+        <span class="text-2xl font-extrabold text-blue-500 tracking-widest drop-shadow">Azzam</span>
+        <span class="hidden sm:inline text-base font-semibold text-slate-600 italic animate-pulse">Healthcare Data Analyst</span>
+      </div>
+      <button id="navToggle" class="md:hidden text-2xl focus:outline-none hover:text-blue-500 transition">
+        <i class="fa fa-bars"></i>
+      </button>
+      <ul id="navLinks" class="hidden md:flex space-x-6 font-semibold text-base">
+        <li><a href="#hero" class="hover:text-blue-500 transition">Home</a></li>
+        <li><a href="#skills" class="hover:text-blue-500 transition">Skills</a></li>
+        <li><a href="#projects" class="hover:text-blue-500 transition">Projects</a></li>
+        <li><a href="#certs" class="hover:text-blue-500 transition">Certifications</a></li>
+      </ul>
+    </div>
+    <!-- Mobile nav -->
+    <div id="mobileNav" class="md:hidden hidden px-6 pb-3 bg-blue-50 border-t border-blue-200">
+      <ul class="flex flex-col space-y-2 font-semibold text-base">
+        <li><a href="#hero" class="hover:text-blue-500 transition">Home</a></li>
+        <li><a href="#skills" class="hover:text-blue-500 transition">Skills</a></li>
+        <li><a href="#projects" class="hover:text-blue-500 transition">Projects</a></li>
+        <li><a href="#certs" class="hover:text-blue-500 transition">Certifications</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main Content Wrapper with consistent margins -->
+  <main class="max-w-5xl mx-auto px-4 sm:px-8">
+
+    <!-- Hero Section -->
+    <section id="hero" class="pt-36 pb-16 flex flex-col items-center justify-center min-h-[80vh]">
+      <div class="glass max-w-3xl w-full mx-auto rounded-2xl p-8 md:p-12 flex flex-col md:flex-row items-center gap-8 shadow-xl">
+       <img src="123.jpg" alt="Azzam Mohamed" class="profile-img w-40 h-40 rounded-full border-4 border-blue-200 shadow-lg mb-4 md:mb-0 object-cover object-center" />
+        <div class="flex-1 text-center md:text-left">
+          <h1 class="text-3xl md:text-4xl font-extrabold mb-2 tracking-tight">Azzam Mohamed</h1>
+          <h2 class="text-xl md:text-2xl font-semibold text-blue-500 mb-3">Healthcare Data Analyst</h2>
+          <p class="text-base md:text-lg text-slate-600 mb-4">
+            Turning healthcare data into actionable insights. Passionate about analytics, visualization, and improving patient outcomes with data-driven solutions.
+          </p>
+          <div class="flex justify-center md:justify-start gap-4 mt-2">
+            <a href="mailto:azzam@email.com" class="btn bg-blue-500 text-white px-5 py-2 rounded-full font-semibold shadow hover:bg-blue-600 transition flex items-center gap-2"><i class="fa-solid fa-envelope"></i>Contact</a>
+            <a href="#projects" class="btn bg-white/30 border border-blue-200 text-blue-700 px-5 py-2 rounded-full font-semibold shadow hover:bg-blue-100 transition">Projects</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-12">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center text-blue-600">Skills & Tools</h2>
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
+        <div class="glass flex flex-col items-center p-4 rounded-xl">
+          <i class="fa-brands fa-python text-3xl text-yellow-400 mb-2"></i>
+          <span class="font-semibold">Python</span>
+        </div>
+        <div class="glass flex flex-col items-center p-4 rounded-xl">
+          <i class="fa-solid fa-database text-3xl text-blue-500 mb-2"></i>
+          <span class="font-semibold">SQL</span>
+        </div>
+        <div class="glass flex flex-col items-center p-4 rounded-xl">
+          <i class="fa-solid fa-chart-bar text-3xl text-green-500 mb-2"></i>
+          <span class="font-semibold">Power BI</span>
+        </div>
+        <div class="glass flex flex-col items-center p-4 rounded-xl">
+          <i class="fa-solid fa-chart-pie text-3xl text-blue-400 mb-2"></i>
+          <span class="font-semibold">Tableau</span>
+        </div>
+        <div class="glass flex flex-col items-center p-4 rounded-xl">
+          <i class="fa-solid fa-file-excel text-3xl text-green-600 mb-2"></i>
+          <span class="font-semibold">Excel</span>
+        </div>
+        <div class="glass flex flex-col items-center p-4 rounded-xl">
+          <i class="fa-solid fa-code text-3xl text-indigo-400 mb-2"></i>
+          <span class="font-semibold">R</span>
+        </div>
+        <div class="glass flex flex-col items-center p-4 rounded-xl">
+          <i class="fa-solid fa-notes-medical text-3xl text-red-400 mb-2"></i>
+          <span class="font-semibold">Healthcare Data</span>
+        </div>
+        <div class="glass flex flex-col items-center p-4 rounded-xl">
+          <i class="fa-solid fa-brain text-3xl text-purple-400 mb-2"></i>
+          <span class="font-semibold">Machine Learning</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-12 bg-gradient-to-br from-blue-100/40 to-green-100/40">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center text-blue-600">Healthcare Projects</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="glass group rounded-xl p-5 flex flex-col transition hover:scale-105 duration-200 shadow-lg">
+          <div class="flex items-center gap-2 mb-2">
+            <i class="fa-solid fa-heart-pulse text-pink-400 text-xl"></i>
+            <span class="font-bold">Patient Readmission Predictor</span>
+          </div>
+          <span class="text-xs text-blue-500 mb-2">Python, Scikit-learn, SQL</span>
+          <p class="text-sm text-slate-700 group-hover:opacity-80 transition">
+            Built a model to predict hospital readmissions, improving care and reducing costs.
+          </p>
+        </div>
+        <div class="glass group rounded-xl p-5 flex flex-col transition hover:scale-105 duration-200 shadow-lg">
+          <div class="flex items-center gap-2 mb-2">
+            <i class="fa-solid fa-chart-line text-green-400 text-xl"></i>
+            <span class="font-bold">COVID-19 Dashboard</span>
+          </div>
+          <span class="text-xs text-blue-500 mb-2">Power BI, SQL</span>
+          <p class="text-sm text-slate-700 group-hover:opacity-80 transition">
+            Interactive dashboard tracking COVID-19 trends and resource utilization.
+          </p>
+        </div>
+        <div class="glass group rounded-xl p-5 flex flex-col transition hover:scale-105 duration-200 shadow-lg">
+          <div class="flex items-center gap-2 mb-2">
+            <i class="fa-solid fa-user-doctor text-blue-400 text-xl"></i>
+            <span class="font-bold">Clinical Trial Analyzer</span>
+          </div>
+          <span class="text-xs text-blue-500 mb-2">Tableau, Python</span>
+          <p class="text-sm text-slate-700 group-hover:opacity-80 transition">
+            Visualized and analyzed clinical trial data for actionable insights.
+          </p>
+        </div>
+        <div class="glass group rounded-xl p-5 flex flex-col transition hover:scale-105 duration-200 shadow-lg">
+          <div class="flex items-center gap-2 mb-2">
+            <i class="fa-solid fa-notes-medical text-red-400 text-xl"></i>
+            <span class="font-bold">EHR Data Cleaner</span>
+          </div>
+          <span class="text-xs text-blue-500 mb-2">Python, Pandas</span>
+          <p class="text-sm text-slate-700 group-hover:opacity-80 transition">
+            Automated cleaning of electronic health records for analytics readiness.
+          </p>
+        </div>
+        <div class="glass group rounded-xl p-5 flex flex-col transition hover:scale-105 duration-200 shadow-lg">
+          <div class="flex items-center gap-2 mb-2">
+            <i class="fa-solid fa-dna text-purple-400 text-xl"></i>
+            <span class="font-bold">Genomics Data Visualizer</span>
+          </div>
+          <span class="text-xs text-blue-500 mb-2">R, Shiny</span>
+          <p class="text-sm text-slate-700 group-hover:opacity-80 transition">
+            Built interactive tools to visualize and explore genomics datasets.
+          </p>
+        </div>
+        <div class="glass group rounded-xl p-5 flex flex-col transition hover:scale-105 duration-200 shadow-lg">
+          <div class="flex items-center gap-2 mb-2">
+            <i class="fa-solid fa-syringe text-green-400 text-xl"></i>
+            <span class="font-bold">Vaccine Uptake Analysis</span>
+          </div>
+          <span class="text-xs text-blue-500 mb-2">Power BI, SQL</span>
+          <p class="text-sm text-slate-700 group-hover:opacity-80 transition">
+            Analyzed vaccine uptake trends to inform public health strategies.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certs" class="py-12">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center text-blue-600">Certifications</h2>
+      <div class="flex flex-wrap justify-center gap-4">
+        <div class="glass flex items-center gap-2 px-4 py-2 rounded-full">
+          <i class="fa-solid fa-certificate text-yellow-400"></i>
+          <span class="font-semibold text-sm">Google Data Analytics</span>
+        </div>
+        <div class="glass flex items-center gap-2 px-4 py-2 rounded-full">
+          <i class="fa-solid fa-certificate text-blue-400"></i>
+          <span class="font-semibold text-sm">IBM Data Science</span>
+        </div>
+        <div class="glass flex items-center gap-2 px-4 py-2 rounded-full">
+          <i class="fa-solid fa-certificate text-green-400"></i>
+          <span class="font-semibold text-sm">Microsoft Power BI</span>
+        </div>
+        <div class="glass flex items-center gap-2 px-4 py-2 rounded-full">
+          <i class="fa-solid fa-certificate text-indigo-400"></i>
+          <span class="font-semibold text-sm">Tableau Desktop Specialist</span>
+        </div>
+        <div class="glass flex items-center gap-2 px-4 py-2 rounded-full">
+          <i class="fa-solid fa-certificate text-pink-400"></i>
+          <span class="font-semibold text-sm">Coursera Healthcare Analytics</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Scroll to Top Button -->
+  <button id="scrollTopBtn" class="fixed bottom-6 right-6 z-50 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition hidden">
+    <i class="fa fa-arrow-up"></i>
+  </button>
+
+  <!-- Footer with contacts only -->
+  <footer class="w-full mt-12 py-6 bg-gradient-to-r from-blue-200/60 to-green-100/60 border-t border-blue-100 relative overflow-hidden">
+    <div class="max-w-5xl mx-auto px-4 sm:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-2">
+        <span class="text-lg font-bold text-blue-600 tracking-widest">Azzam</span>
+        <span class="text-xs text-slate-500 font-mono">| Healthcare Data Analyst</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="mailto:azzam@email.com" class="hover:text-blue-600 transition">
+          <i class="fa-solid fa-envelope text-2xl"></i>
+        </a>
+        <a href="https://github.com/azzam" target="_blank" class="hover:text-blue-600 transition">
+          <i class="fa-brands fa-github text-2xl"></i>
+        </a>
+        <a href="https://linkedin.com/in/azzam" target="_blank" class="hover:text-blue-600 transition">
+          <i class="fa-brands fa-linkedin text-2xl"></i>
+        </a>
+      </div>
+    </div>
+    <div class="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-blue-400/30 via-green-300/30 to-blue-400/30 blur-sm"></div>
+  </footer>
+
+  <script>
+    // Navbar mobile toggle
+    document.getElementById('navToggle').onclick = function() {
+      document.getElementById('mobileNav').classList.toggle('hidden');
+    };
+
+    // Scroll indicator
+    window.addEventListener('scroll', function() {
+      const scrollBar = document.getElementById('scrollBar');
+      const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = (winScroll / height) * 100;
+      scrollBar.style.width = scrolled + "%";
+    });
+
+    // Scroll-to-top button
+    const scrollBtn = document.getElementById('scrollTopBtn');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        scrollBtn.classList.remove('hidden');
+      } else {
+        scrollBtn.classList.add('hidden');
+      }
+    });
+    scrollBtn.onclick = () => window.scrollTo({top:0, behavior:'smooth'});
+
+    // Smooth scroll for nav links (mobile)
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.onclick = function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({behavior: 'smooth'});
+          if(document.getElementById('mobileNav')) {
+            document.getElementById('mobileNav').classList.add('hidden');
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>
